@@ -79,6 +79,48 @@
 // }
 
 
+// let panCard = prompt("Enter Pan card status Y/N");
+// let OpeningBalance = +prompt("Enter Opening Balance");
+// let AdharCard = prompt("Enter adhar card status Y/N");
+// let IDProof = prompt("Enter IDProof status Y/N");
+// let Passport = prompt("Enter Passport status Y/N");
+
+
+// let result = (panCard == "Y" && OpeningBalance >= 1000 && (AdharCard == "Y" || IDProof == "Y" || Passport == "Y"))
+
+// if (result) {
+// 	console.log("Open")
+// }else{
+// 	console.log("Doc Pending")
+// }
+
+
+
+var x = +prompt("enter Product Price"); // 1000
+var y = +prompt("enter Dis Price"); // 10%
+var z = +prompt("enter Gst Price"); // 18%
+
+
+
+// var result = (x-(x*y/100))*(1+z/100);  
+var result = x-(x*y/100)+(x-(x*y/100))*z/100;
+
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -89,14 +131,12 @@
 
 
 
+// var OpeningBalance = 1000;
+// var PanCard = "Yes";
+// var Adhaar = "Yes";
 
-var OpeningBalance = 1000;
-var PanCard = "Yes";
-var Adhaar = "Yes";
-
-result = OpeningBalance==1000 && PanCard=="Yes" && Adhaar=="Yes";
-
-console.log(result)
+// result = OpeningBalance==1000 && PanCard=="Yes" && Adhaar=="Yes";
+// console.log(result)
 
 
 
