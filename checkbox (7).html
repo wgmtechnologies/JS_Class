@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>checkbox</title>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+		*
+		{
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+			font-family: 'Ubuntu', sans-serif;
+		}
+		
+		#main
+		{
+			margin-top: 10px;
+		}
+
+		#studentname
+		{
+			margin: 10px 0px;
+			width: 200px;
+			font-size: 20px;
+		}
+
+		#btn
+		{
+			width: 80px;
+			height: 30px;
+			cursor: pointer;
+			background: #3289a8;
+			color: white;
+			font-size: 15px;
+			border: none;
+			border-radius: 35px;
+			box-shadow: 0px 0px 10px #3289a8;
+		}
+
+		#output
+		{
+			font-size: 20px;
+			opacity: 0;
+			width: 80%;
+			height: auto;
+			padding: 20px;
+			background: lavender;
+		}
+
+		#self
+		{
+			text-align: left;
+			margin: 50px 0px;
+		}
+
+
+		span
+		{
+			color: red;
+			font-size: 20px;
+		}
+
+
+		.subject
+		{
+			background: white;
+			width: 100%;
+			border: 2px solid black;
+			font-weight: bold;
+		}
+
+		th
+		{
+			padding: 0px 30px;
+			background: lightcyan;
+			margin: 10px 0px;
+		}
+
+		td
+		{
+			border: 2px solid black;
+			text-align: center;
+			margin: 0px 30px;
+		}
+		
+		h2,h3
+		{
+			font-size: 20px;
+		}
+
+		.star
+		{
+			color: red;
+		}
+
+		#important
+		{
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+
+
+<div id="main">
+	<div id="inputs" align="center">
+
+		<div id="roll-box">
+		<h2>ENTER YOUR NAME AND FIND OUT YOUR EXAM RESULT</h2>
+		<!-- <h4><sup>*</sup> PLESE TYPE ALL CHARACHTER IN CAPITAL LETTER</h4> -->
+		<input type="text" id="studentname" placeholder="STUDENTS ROLL NO">
+		<br>
+		<input type="button" id="btn" onclick="result()" value="SUBMIT">
+		</div>
+
+
+		<div id="output">
+
+			<div class="box1">
+				<img src="images.png">
+
+				
+				<h2>CENTRAL BOARD OF SECONDARY EDUCATION</h2>
+				<h3>MARKS STATEMENT CUM CERTIFICATE <br>
+				SENIOR SCHOOL CERTIFICATE EXAMINNITIONS, 2021</h3>
+				
+			</div>
+
+
+			<div id="self">
+				<h5>Name = <span id="stname"></span> <br>
+				Roll No. = <span id="stroll"></span><br>
+				Mother's Name = <span id="stmname"></span><br>
+				Father's Name = <span id="stfname"></span><br>
+				School = <span>ABCD Memorial Public School</span></h5>
+			</div>
+		
+		<div class="subject">
+			<table>
+				<tr>
+				<th>Sub. code</th>
+				<th>Subject</th>
+				<th>Theory</th>
+				<th>Practical</th>
+				<th>Total</th>
+				</tr>
+
+				<tr>
+				<td id="subCo1"></td>
+				<td id="sub1"></td>
+				<td id="theo1"></td>
+				<td id="prac1"></td>
+				<td id="total1"></td>
+				</tr>
+
+				<tr>
+				<td id="subCo2"></td>
+				<td id="sub2"></td>
+				<td id="theo2"></td>
+				<td id="prac2"></td>
+				<td id="total2"></td>
+				</tr>
+
+				<tr>
+				<td id="subCo3"></td>
+				<td id="sub3"></td>
+				<td id="theo3"></td>
+				<td id="prac3"></td>
+				<td id="total3"></td>
+				</tr>
+
+				<tr>
+				<td id="subCo4"></td>
+				<td id="sub4"></td>
+				<td id="theo4"></td>
+				<td id="prac4"></td>
+				<td id="total4"></td>
+				</tr>
+
+				<tr>
+				<td id="subCo5"></td>
+				<td id="sub5"></td>
+				<td id="theo5"></td>
+				<td id="prac5"></td>
+				<td id="total5"></td>
+				</tr>
+
+				<tr>
+				<td id="subCo6"></td>
+				<td id="sub6"></td>
+				<td id="theo6"></td>
+				<td id="prac6"></td>
+				<td id="total6"></td>
+				</tr>
+			</table>
+		<!-- <p id="Hindi"></p>	
+		<p id="English"></p>
+		<p id="Science"></p>
+		<p id="History"></p>
+		<p id="Physical"></p> -->
+		</div>
+		</div>
+		<b><p id="important"><span class="star">*</span>For New Result, Refresh The Page</p></b>
+	</div>
+</div>
+
+
+
+
+<script type="text/javascript">
+	
+	function result()
+	{
+		document.getElementById('output').style.opacity = '1'
+		document.getElementById('roll-box').style.display = "none"
+		document.getElementById('important').style.opacity = '1'
+
+		let students =
+		{
+			12451:
+			{
+				Stname: "Suresh Kumar",
+				Stroll:"12451",
+				Stmname:"Kamla Devi",
+				Stfname:'Naresh Kumar',
+
+				SubCo1:"301",
+				Sub1:"English",
+				Theo1:"065",
+				Prac1:"017",
+				Total1:"082",
+
+				SubCo2:"002",
+				Sub2:"Hindi",
+				Theo2:"066",
+				Prac2:"020",
+				Total2:"087",
+
+				SubCo3:"027",
+				Sub3:"History",
+				Theo3:"061",
+				Prac3:"018",
+				Total3:"079",
+
+				SubCo4:"028",
+				Sub4:"Political",
+				Theo4:"055",
+				Prac4:"015",
+				Total4:"070",
+
+				SubCo5:"029",
+				Sub5:"Geography",
+				Theo5:"058",
+				Prac5:"020",
+				Total5:"078",
+
+				SubCo6:"048",
+				Sub6:"Physical",
+				Theo6:"065",
+				Prac6:"012",
+				Total6:"077"
+
+			},
+
+			12452:
+			{
+
+				Stname: "Vipin Srivastav",
+				Stroll:"12452",
+				Stmname:"Komal Srivastav",
+				Stfname:'Rakesh Srivastav',
+
+				SubCo1:"301",
+				Sub1:"English",
+				Theo1:"058",
+				Prac1:"007",
+				Total1:"065",
+
+				SubCo2:"002",
+				Sub2:"Hindi",
+				Theo2:"072",
+				Prac2:"015",
+				Total2:"087",
+
+				SubCo3:"027",
+				Sub3:"History",
+				Theo3:"041",
+				Prac3:"010",
+				Total3:"051",
+
+				SubCo4:"028",
+				Sub4:"Political",
+				Theo4:"071",
+				Prac4:"013",
+				Total4:"084",
+
+				SubCo5:"029",
+				Sub5:"Geography",
+				Theo5:"065",
+				Prac5:"010",
+				Total5:"075",
+
+				SubCo6:"048",
+				Sub6:"Physical",
+				Theo6:"081",
+				Prac6:"012",
+				Total6:"093"
+			},
+
+			12453:
+			{
+				Stname: "Priya Sahni",
+				Stroll:"12453",
+				Stmname:"Sweta Sahni",
+				Stfname:'Mahesh Sahni',
+
+				SubCo1:"301",
+				Sub1:"English",
+				Theo1:"068",
+				Prac1:"017",
+				Total1:"085",
+
+				SubCo2:"002",
+				Sub2:"Hindi",
+				Theo2:"069",
+				Prac2:"011",
+				Total2:"080",
+
+				SubCo3:"027",
+				Sub3:"History",
+				Theo3:"052",
+				Prac3:"016",
+				Total3:"068",
+
+				SubCo4:"028",
+				Sub4:"Political",
+				Theo4:"060",
+				Prac4:"015",
+				Total4:"075",
+
+				SubCo5:"029",
+				Sub5:"Geography",
+				Theo5:"083",
+				Prac5:"010",
+				Total5:"093",
+
+				SubCo6:"048",
+				Sub6:"Physical",
+				Theo6:"071",
+				Prac6:"009",
+				Total6:"080"
+			},
+			
+
+			12454:
+			{
+				Stname: "Pawan Yadav",
+				Stroll:"12454",
+				Stmname:"Sunita",
+				Stfname:'Suraj Yadav',
+
+				SubCo1:"301",
+				Sub1:"English",
+				Theo1:"063",
+				Prac1:"010",
+				Total1:"073",
+
+				SubCo2:"002",
+				Sub2:"Hindi",
+				Theo2:"054",
+				Prac2:"011",
+				Total2:"065",
+
+				SubCo3:"027",
+				Sub3:"History",
+				Theo3:"069",
+				Prac3:"014",
+				Total3:"083",
+
+				SubCo4:"028",
+				Sub4:"Political",
+				Theo4:"073",
+				Prac4:"015",
+				Total4:"088",
+
+				SubCo5:"029",
+				Sub5:"Geography",
+				Theo5:"069",
+				Prac5:"019",
+				Total5:"088",
+
+				SubCo6:"048",
+				Sub6:"Physical",
+				Theo6:"058",
+				Prac6:"016",
+				Total6:"074"
+			},
+
+			12455:
+			{
+				Stname: "Sumit Patel",
+				Stroll:"12455",
+				Stmname:"Nilam",
+				Stfname:'Ketan Patel',
+
+				SubCo1:"301",
+				Sub1:"English",
+				Theo1:"065",
+				Prac1:"010",
+				Total1:"075",
+
+				SubCo2:"002",
+				Sub2:"Hindi",
+				Theo2:"073",
+				Prac2:"018",
+				Total2:"091",
+
+				SubCo3:"027",
+				Sub3:"History",
+				Theo3:"081",
+				Prac3:"007",
+				Total3:"088",
+
+				SubCo4:"028",
+				Sub4:"Political",
+				Theo4:"073",
+				Prac4:"014",
+				Total4:"087",
+
+				SubCo5:"029",
+				Sub5:"Geography",
+				Theo5:"060",
+				Prac5:"017",
+				Total5:"077",
+
+				SubCo6:"048",
+				Sub6:"Physical",
+				Theo6:"079",
+				Prac6:"018",
+				Total6:"097"
+			}
+		}
+
+
+		// let self = document.getElementById('self');
+		// let hindi = document.getElementById('Hindi');
+		// let english = document.getElementById('English');
+		// let science = document.getElementById('Science');
+		// let history = document.getElementById('History');
+		// let physical = document.getElementById('Physical');
+
+		let studentname = document.getElementById('studentname').value
+		let definition = students[studentname];
+
+
+
+		let stname = document.getElementById('stname');
+			stroll = document.getElementById('stroll');
+			stmname = document.getElementById('stmname');
+			stfname = document.getElementById('stfname');
+
+			subCo1 = document.getElementById('subCo1');
+			sub1 = document.getElementById('sub1');
+			theo1 = document.getElementById('theo1');
+			prac1 = document.getElementById('prac1');
+			total1 = document.getElementById('total1');
+
+			subCo2 = document.getElementById('subCo2');
+			sub2 = document.getElementById('sub2');
+			theo2 = document.getElementById('theo2');
+			prac2 = document.getElementById('prac2');
+			total2 = document.getElementById('total2');
+
+			subCo3 = document.getElementById('subCo3');
+			sub3 = document.getElementById('sub3');
+			theo3 = document.getElementById('theo3');
+			prac3 = document.getElementById('prac3');
+			total3 = document.getElementById('total3');
+
+			subCo4 = document.getElementById('subCo4');
+			sub4 = document.getElementById('sub4');
+			theo4 = document.getElementById('theo4');
+			prac4 = document.getElementById('prac4');
+			total4 = document.getElementById('total4');
+
+			subCo5 = document.getElementById('subCo5');
+			sub5 = document.getElementById('sub5');
+			theo5 = document.getElementById('theo5');
+			prac5 = document.getElementById('prac5');
+			total5 = document.getElementById('total5');
+
+			subCo6 = document.getElementById('subCo6');
+			sub6 = document.getElementById('sub6');
+			theo6 = document.getElementById('theo6');
+			prac6 = document.getElementById('prac6');
+			total6 = document.getElementById('total6');
+
+
+
+
+		if (definition == undefined) 
+		{
+			output.innerHTML = `<hr> There IS NO Information About This "<b>${studentname}</b>" Roll Number <hr>`;
+		}
+
+		else if(definition)
+		{
+
+			stname.innerHTML = `${definition.Stname}`
+			stroll.innerHTML = `${definition.Stroll}`
+			stmname.innerHTML = `${definition.Stmname}`
+			stfname.innerHTML = `${definition.Stfname}`
+
+			subCo1.innerHTML = `${definition.SubCo1}`
+			sub1.innerHTML = `${definition.Sub1}`
+			theo1.innerHTML = `${definition.Theo1}`
+			prac1.innerHTML = `${definition.Prac1}`
+			total1.innerHTML = `${definition.Total1}`
+
+			subCo2.innerHTML = `${definition.SubCo2}`
+			sub2.innerHTML = `${definition.Sub2}`
+			theo2.innerHTML = `${definition.Theo2}`
+			prac2.innerHTML = `${definition.Prac2}`
+			total2.innerHTML = `${definition.Total2}`
+
+			subCo3.innerHTML = `${definition.SubCo3}`
+			sub3.innerHTML = `${definition.Sub3}`
+			theo3.innerHTML = `${definition.Theo3}`
+			prac3.innerHTML = `${definition.Prac3}`
+			total3.innerHTML = `${definition.Total3}`
+
+			subCo4.innerHTML = `${definition.SubCo4}`
+			sub4.innerHTML = `${definition.Sub4}`
+			theo4.innerHTML = `${definition.Theo4}`
+			prac4.innerHTML = `${definition.Prac4}`
+			total4.innerHTML = `${definition.Total4}`
+
+			subCo5.innerHTML = `${definition.SubCo5}`
+			sub5.innerHTML = `${definition.Sub5}`
+			theo5.innerHTML = `${definition.Theo5}`
+			prac5.innerHTML = `${definition.Prac5}`
+			total5.innerHTML = `${definition.Total5}`
+
+			subCo6.innerHTML = `${definition.SubCo6}`
+			sub6.innerHTML = `${definition.Sub6}`
+			theo6.innerHTML = `${definition.Theo6}`
+			prac6.innerHTML = `${definition.Prac6}`
+			total6.innerHTML = `${definition.Total6}`
+
+
+
+			// self.innerHTML = `Name = ${definition.Name} <br><br> Class = ${definition.Class} <br><br> Roll No = ${definition.RollNo}`
+
+			// history.innerHTML = `Marks in history ${definition.History}`;
+			// hindi.innerHTML = `Marks in hindi ${definition.Hindi}`;
+			// science.innerHTML = `Marks in science ${definition.Science}`;
+			// english.innerHTML = `Marks in english ${definition.English}`;
+			// physical.innerHTML = `Marks in physical ${definition.Physical}`;
+		}
+
+		
+	}
+
+</script>
+
+</body>
+</html>
