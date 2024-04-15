@@ -1,0 +1,125 @@
+// 1.-------------- Questions ---------------//
+// let a = ["1","sdf"];
+// let b = [];
+// console.log(a==b);
+// console.log(a===b);
+
+// 2.-------------- Questions ---------------//
+// let a = [1];
+// let b = a;
+// console.log(a == b);
+// console.log(a === b);
+
+// 3.-------------- Questions ---------------//
+// let a = [20];
+// let b = [20];
+// console.log(a == b[0]);  // bug
+// console.log(a[0] === b[0]);
+
+// console.log(a);
+
+// console.log(a[0]);
+
+// 4.-------------- Questions ---------------//
+// let a = [1,2,3,4]
+// let b = {name: "Umesh", age:67};
+// console.log(...a);
+// console.log(b.name, b.age);
+
+// 5.-------------- Questions ---------------//
+// let a = "100";
+// let a = "ABC";
+// console.log(a/2);
+
+// 6.-------------- Questions ---------------//
+// let data = 10 - -10;
+// console.log(data);
+
+// 7.-------------- Questions ---------------//
+// let set = new Set([1, 2, 3, 4, 5]);
+// console.log(...set);
+// console.log(set);
+
+// 8.-------------- Questions ---------------//
+// let data = { name: "Umesh"};
+// console.log(delete data.name);
+// console.log(data);
+
+// 9.-------------- Questions ---------------//
+// let data = { name: "Umesh"};
+// console.log(delete data.name);
+// console.log(data);
+
+// 10.-------------- Questions ---------------//
+// let data = ["aman","anil","komal"];  
+// let [data1] = data;
+// console.log(data);
+
+// 11.-------------- Questions ---------------//
+// let data = {name:"Umesh", age: 29, skill: "web"};
+// let {name, age, skill} = data;
+// console.log(name, age, skill);
+
+// let {name,age,skill}= data;
+
+// console.log(name)
+// console.log(data.name)
+// console.log(age)
+
+// console.log(data);
+
+
+// 12.-------------- Questions ---------------//
+// let data = {name: "Umesh", code: 200, skill: "JavaScript"};
+// let data1 = {city: "South Delhi", pincode: 110080, email: "info@umesh.com"};
+// data = {...data,...data1};
+// let {name, code, skill, city, pincode, email} = data
+// console.log(name,code, city);
+// console.log(data);
+
+
+
+// 13.-------------- Questions ---------------//
+// let data = {name: "Umesh", code: 200, skill: "JavaScript"};
+// let data1 = {city: "South Delhi", pincode: 110080, email: "info@umesh.com"};
+
+// data = {data,...data1};
+// console.log(data);
+
+
+// 14.-------------- Questions ---------------//
+// let data = {name: "Umesh", code: 200, skill: "JavaScript"};
+// let data1 = {city: "South Delhi", pincode: 110080, skill: "Java"};
+
+// data = {...data,...data1};
+// console.log(data);
+
+// 15.-------------- Questions ---------------//
+// let name = 'Umesh Kumar';
+// console.log(name());
+
+// 16.-------------- Questions ---------------//
+// let output = false || {} || null;
+// console.log(output)
+
+// if({}){
+//     console.log("yes");
+// }
+
+// 17.-------------- Questions ---------------//
+// let result = null || false || 'a';
+// console.log(result);
+
+// 18.-------------- Questions ---------------//
+// let result = [] || 0 || true;
+// console.log(result);
+
+// 19.-------------- Questions ---------------//
+// let myName = "Anil";
+
+// function abc()
+// {   
+//     let myName = "Aman";
+//     console.log(myName)
+// }
+// abc();
