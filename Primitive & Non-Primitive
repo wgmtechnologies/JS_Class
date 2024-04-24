@@ -1,0 +1,51 @@
+
+
+//*************** Datatypes  *********************//
+
+// Primitive 
+// 7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
+
+// refrence {None Primitive}
+// Array, object, Functions
+
+    // const score = 100
+    // const scoreValue = 100.5
+    // const myName = "Umesh";
+    // const isLoggedIn = false
+    // const outSideTemp = null
+    // let userEmail;
+
+    // console.log(typeof userEmail, userEmail);
+
+
+    // const id = Symbol('123')
+    // const anotherId = Symbol('123')
+    // console.log(id===anotherId);
+
+//    let bigNumber = BigInt(1);
+//    let anotherBigNum = 6878676786768767861212n;
+//    console.log(bigNumber+anotherBigNum);
+
+//    let abc = BigInt(1896756453212341);
+//    let anoAbc = BigInt(24);
+//    console.log(abc+anoAbc)
+
+    
+
+    // const animal = ["cat","rat","monkey"];
+    // console.log(typeof animal);
+    // console.log(animal[0]);
+
+    // let studentInfo = {
+    //     stRll:1010,
+    //     stName:"Umesh Kumar",
+    //     subject:"Computer"
+    // }
+
+    // console.log(typeof studentInfo.stRll);
+
+    // const muCountry = function(){
+    //     console.log("INDIA");
+    // }
+
+    // console.log(muCountry)
