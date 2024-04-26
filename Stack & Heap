@@ -1,0 +1,32 @@
+// ******************* Stack & Heap Memory **************** //
+
+
+let myName = "Umesh Kumar";
+let myNickName = myName;
+myNickName = "Ramesh Kumar";
+myNickName = "Aman Kumar";
+
+// console.log(myName);
+// console.log(myNickName);
+
+
+let userFirst = {
+    email: "umesh@gmail.com",
+    upi:"user@paytm"
+}
+
+let userSecond = userFirst
+let userThird = userFirst
+
+// console.log(userFirst);
+// console.log(userSecond);
+
+// console.log(userFirst.email);
+// console.log(userSecond.email);
+// console.log(userThird.email);
+
+userFirst.email = "ramesh@gmail.com";
+
+console.log(userFirst.email);
+console.log(userSecond.email);
+console.log(userThird.email);
