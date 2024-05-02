@@ -1,0 +1,19 @@
+// ======= String in Javascript ===================>
+
+
+// let myFirstName = "Umesh";
+// let myLastName = "Kumar";
+
+// let newName = myFirstName +" "+ myLastName
+// newName = `my Name is ${myFirstName} my last name ${myLastName}`
+
+
+
+let newTxt = new String("Training");
+
+let myNewText = newTxt.length;
+
+console.log(newTxt);
+console.log(myNewText );
+
+console.log(myFirstName.toUpperCase())
