@@ -1,0 +1,329 @@
+
+// const openingBalance = new Number(1000);
+// console.log(openingBalance);  
+
+// console.log(openingBalance.toString().length);
+// console.log(openingBalance.toFixed(1));
+
+
+// const newBalance = 123.62
+// console.log(newBalance.toPrecision(3))
+
+// let newNumberFormet = 1000000;
+// console.log(newNumberFormet.toLocaleString('EN-IN'));
+
+// let number = 1000;
+
+// console.log(number.math());
+
+
+
+
+// =========  switch function ==============>
+
+// 1. Example ============================================>
+
+// let day = +prompt("Enter any value 1-7");
+// let dayName;
+
+// switch(day)
+// {
+// case 1:
+//     dayName = "Monday";
+//     break;
+// case 2:
+//     dayName = "Tuesady";
+//     break;
+// case 3:
+//     dayName = "Wednesday";
+//     break;
+// case 4:
+//     dayName = "Thursday";
+//     break;
+// case 5:
+//     dayName = "Friday";
+//     break;
+// case 6:
+//     dayName = "Saturdat";
+//     break;
+// case 7:
+//     dayName = "Sunday";
+//     break;
+        
+//     default:
+//     dayName = "N/A";    
+// }
+
+// console.log(dayName);
+
+
+
+// 2. Example ========================
+
+// let backgroundColor = prompt("Enter backgroundColor name");
+
+// switch(backgroundColor)
+// {
+// case "red":
+//     document.bgColor = "red";
+//     break;
+// case "green":
+//     document.bgColor = "green";
+//     break;
+// case "blue":
+//     document.bgColor = "blue";
+//     break;
+// case "yellow":
+//     document.bgColor = "yellow";
+//     break;
+// default:
+//     alert(`${backgroundColor} is not available`);
+// }
+
+
+
+// 3. Example
+
+// let trafficSignal = prompt("Enter Traffic Color Here");
+// let message = "";
+
+// switch(trafficSignal)
+// {
+// case "red":
+//     message = "Stop immediately";
+//     break;
+// case "yellow":
+//     message = "Prepare to Stop"
+//     break;
+// case "Green":
+//     message = "Continue Driving";
+//     break;
+// default:
+//     message = "invalid traffic light color";            
+// }
+
+// console.log(message);
+
+
+// 4. Example===============================>
+
+
+
+
+
+
+
+
+// Switch function ============================== >
+
+// let dayName = +prompt("Enter any number between - 1 to 7");
+// let output = "";
+
+// switch(dayName)
+// {
+// case 1:
+//     output = "Monday";
+//     break;
+// case 2:
+//     output = "Tuesday";
+//     break;    
+// case 3:
+//     output = "Wednesday";
+//     break;
+// default:
+//     output = "ivailed day";
+// }
+
+// console.log(output);
+
+
+
+
+// BackGround Color Change ============================= ?
+
+// let bgColor = prompt("Enter any bgColor name");
+
+// switch(bgColor)
+// {
+
+// case "red":
+//     document.bgColor = "red";
+//     break;
+
+// case "green":
+//     document.bgColor = "green";
+//     break;
+// default:
+//     alert(`${bgColor} color is not available`);
+
+// }
+
+
+
+//  >=90 "A"
+//  >=70 "B"
+//  >=50 "C"
+//  <50  "Fail" default
+
+
+// let repotCard = +prompt("Enter value - 1-99");
+
+// switch(repotCard){
+
+// case repotCard:
+//     if (repotCard >= 90) {
+//         console.log("A");
+//          break;
+//     }
+    
+   
+
+// case repotCard:
+//     if (repotCard >= 70) {
+//         console.log("B");
+//          break;
+//     }
+    
+   
+
+// case repotCard:
+
+//     if (repotCard >= 50) {
+//         console.log("C");
+//          break; 
+//     }
+    
+     
+//     default:
+//     console.log("fail");
+// }
+
+
+
+//   let fierst = +prompt("enter the value")
+//   let sec = +prompt("enter the value")
+//   let opt = prompt("enter the oprater")
+
+
+//   switch(opt)
+//   {
+
+//    case "+" :
+         
+//         console.log(fierst+sec)  ;
+       
+//          break ;
+        
+// case "-" :
+         
+//          console.log(fierst-sec);
+//          break ;
+// case "*" :
+         
+//          console.log(fierst*sec) ;
+//          break ;
+//  case "/" :
+         
+//          console.log(fierst/sec) ;
+//          break ;
+
+//   }
+
+
+
+// =====================  if else  (Nested if) =====================================>
+
+// &&,  ||, !=
+
+// >=90 "Pass"
+
+// let marks = 90;
+
+// if ((marks >= 90) == false)
+
+// if (!(marks >= 90)) {
+//     console.log("Pass");
+// }else
+// {
+//     console.log("Fail");
+// }
+
+
+// >=90 "A", >=70 "B", >=50 "C" ,"Fail"
+
+// let mark = 90;
+// if (mark>=90) {
+//     console.log("A");
+// }else if(mark>=70){
+//     console.log("B");   
+// }else if(mark>=50){
+//     console.log("c");   
+// }else{
+//     console.log("fail");
+// }
+
+
+// if (mark>=50) {}
+
+
+// var hindi = 50, eng = 50, math = 50;
+// 
+// let res=((hindi>=50)*1+(eng>=50)*1+(math>=50)*1)==3
+// if (((hindi>=50)*1+(eng>=50)*1+(math>=50)*1)==3) {
+
+//     console.log("Pass")
+// }else
+// {
+//     console.log("Fail")
+// }
+
+
+// if (hindi>=50 && eng>=50 && math>=50){
+//     console.log("Pass")
+// }else{
+
+//     console.log ("Fail")
+// }
+
+
+
+// if (((hindi>=50)*(eng>=50)*(math>=50))*1==1) {
+
+//     console.log("Pass")
+// }else
+// {
+//     console.log("Fail")
+// }
+
+// if (hindi>=50 && (eng>=50 || math>=50){
+//     console.log("Pass")
+// }else{
+
+//     console.log ("Fail")
+// }
+
+// if (hindi>=50) {
+//     if (eng>=50) {
+//         if (math>=50) {
+//             console.log("Pass");
+//         }else{
+//     console.log("Fail");
+// }
+//     }else{
+//     console.log("Fail");
+// }
+// }else{
+//     console.log("Fail");
+// }
+
+
+var hindi = 90, eng = 50, math = 30;
+let total=hindi+eng+math
+
+// let result = 170;
+if ((hindi>=50 && eng>=50 && math>=50) && total>=170  ) {
+    console.log("Pass")
+}else{
+
+    console.log ("Fail")
+}
