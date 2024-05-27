@@ -1,0 +1,23 @@
+// /---------------  Data & time -------------------//
+
+// let myDate = new Date();
+
+// console.log(myDate.toString())
+// console.log(myDate.toDateString())
+// console.log(myDate.toLocaleString())
+
+
+let customDate = new Date();
+
+let PreDate = new Date("5/25/2024");
+
+console.log(PreDate.toLocaleString());
+console.log(customDate.toLocaleString());
+
+
+const diffrentDate = customDate - PreDate;
+
+console.log(diffrentDate / (1000 * 60 * 60 * 24));
+
+console.log(Math.floor(diffrentDate / (1000 * 60 * 60 * 24)))
+console.log(parseInt(diffrentDate / (1000 * 60 * 60 * 24)))
