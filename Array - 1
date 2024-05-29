@@ -1,0 +1,67 @@
+// ===================================== ARRAY =========================================>
+
+// push, pop, unshift, shift, includes, indexOf, slice, splice
+
+// const myArray = [1,2,3,4,5,6,7];
+
+
+// console.log(myArray)
+// console.log(myArray.toString())
+// console.log(myArray[2].toString())
+// console.log(myArray.toLocaleString())
+// console.log(typeof myArray)
+
+
+// myArray.push(8);
+// myArray.push(9);
+// myArray.pop()
+// myArray.pop()
+
+// myArray.unshift(10)
+// myArray.shift()
+
+// console.log(myArray.includes(-1));
+// console.log(myArray.indexOf(5))
+
+
+
+// console.log("A ", ...myArray)
+// let neArry1 = myArray.slice(0,4)
+// console.log(neArry1)
+
+
+// console.log("B ", ...myArray)
+// let neArry2 = myArray.splice(1,4)
+// console.log(neArry2)
+// console.log("C ", ...myArray)
+
+// console.log("D ", myArray[3])
+
+
+let program1 = ["HTML", "CSS", "JavaScript"];
+let program2 = ["CorelDRAW", "Photoshop", "inDesign"];
+
+
+
+// console.log([...program1, ...program2].toLocaleString())
+
+// program1.push(program2);
+
+// console.log(...program1)
+
+const program3 = program1.concat(program2);
+
+console.log(...program3)
+
+
+
+
+
+
+// let myName = "Aman Mehra";
+// // let customName = myName.slice(1,3);
+// // console.log(customName)
+
+// let customName1 = myName.splice(1,3);
+
+// console.log(customName1)
