@@ -1,0 +1,41 @@
+// ======================  object =====================?
+
+
+const User = Symbol("Key1")
+const user1 = "Aman";
+
+
+let newUser = {
+            name:"Prince",
+            age:20,
+            email:"prince@gmail.com",
+            isLoggedIn:false,   
+            lastLogIn:["Monday", "Friday", "Sunday"],
+            "full Name":"Prince kumar",
+            newUser:User,
+            guestUser:`this is New Guest :  ${user1}`
+
+}
+
+console.log(newUser.newSymbol)
+
+// console.log(newUser);
+// console.log(...newUser.lastLogIn)
+
+// console.log(newUser["age"])
+// console.log(newUser["full Name"])
+
+// console.log(newUser)
+
+// newUser.email = "umesh@gmail.com";
+// console.log(newUser.email);
+// console.log(typeof newUser, newUser)
+
+// Object.freeze(newUser);
+// newUser.email = "prince@gmail.com";
+
+// newUser.name = "Kmalesh"
+
+console.log(newUser)
+
+
