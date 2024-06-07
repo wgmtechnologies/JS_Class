@@ -1,0 +1,88 @@
+
+
+// const myApp = new Object()
+
+
+
+const myApp = {}
+// console.log(myApp)
+
+myApp.id=124;
+myApp.name="Umesh";
+myApp.email="umesh@gmail.com";
+myApp.loggedIn=false;
+
+// console.log(myApp)
+
+
+// const newRegularUser ={
+//     email: "umesh@gmail.com",
+//     fullName:{
+//         userFullName:{
+//             firstName: "Umesh",
+//             lastName: "Kumar"
+//         }
+//     }
+// }
+
+
+// console.log(newRegularUser.fullName.userFullName.firstName);
+
+
+
+
+
+
+
+
+
+// const obj1 = {1: "A", 2: "B"}
+// const obj2 = {3: "C", 4: "D"}
+
+// const obj3 = {obj1, obj2};
+
+
+
+
+// const obj3 = Object.assign({}, obj1, obj2)
+
+// console.log(obj3)
+
+
+// const obj3 = {...obj1, ...obj2}
+// console.log(obj3)
+
+
+
+
+
+
+
+
+// const users = [
+//             {
+//                 id: 1,
+//                 email: "info@gmail.com"
+//             },
+//             {
+//                 id: 2,
+//                 email: "umesh@gmail.com"
+//             },
+//             {
+//                 id: 3,
+//                 email: "suman@gmail.com"
+//             },
+//     ]
+
+// console.log(users[0].id, users[0].email);
+
+
+
+// console.log(users[0].email)
+
+console.log(myApp)
+
+// console.log(Object.keys(myApp))
+// console.log(Object.values(myApp))
+// console.log(Object.entries(myApp))
+// console.log(myApp.hasOwnProperty('id'))
