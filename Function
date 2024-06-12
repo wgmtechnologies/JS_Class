@@ -1,0 +1,119 @@
+
+// ==========   De-structure - Object and ARRAY  ====================================>
+
+
+// const newCourse ={
+//     courseName: "Data Analyst",
+//     coursefee: 25000,
+//     trainer:"Umesh Kumar"
+// }
+
+
+// console.log(newCourse.courseName);
+
+// const {coursefee: fee, trainer: tech} = newCourse;
+
+
+// console.log(coursefee)
+// console.log(fee)
+// console.log(tech)
+
+
+
+
+
+// =====  JSON Datatype ============> JavaScript Object Notation
+
+
+// API - Application programming interface : It acts as an intermediary between an application and a server.
+
+// {
+//     "name": "Umesh",
+//     "couseName": "Web Designing",
+//     "fee":9090
+// }
+
+
+// ARRAY Formet
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
+
+// randam user me api
+
+// study Purpose  -> JSON formatter
+
+
+
+
+
+//  ============   Function ===================>
+
+
+
+
+
+// function myName() {
+
+// console.log("U")
+// console.log("M")
+// console.log("E")
+// console.log("S")
+// console.log("H")
+    
+// }
+// myName()
+
+
+// function addTwoNumber(num1, num2) {
+//     console.log(num1 + num2)
+// }
+
+// addTwoNumber(10,20)
+// addTwoNumber(1,2)
+
+
+
+// function addTowNumber(number1, number2)
+// {
+//     console.log(number1+number2);
+// }
+
+// const result = addTowNumber(10,20);
+// console.log("Result: ",result);
+
+
+
+
+// function addTowNumber(number1, number2)
+// {
+    
+    // console.log(number1 + number2)
+
+    
+//     let output = number1+number2;
+//     return output   
+
+// }
+
+// addTowNumber(2,4)
+
+// const result = addTowNumber(10,20);
+// console.log("Result:",  result)
+
+// const abc = addTowNumber(100,200);
+// console.log(abc)
+
+
+
+// function userLoginMessage(username) {
+//     return `${username} Just loggin`
+// }
+
+// let result = userLoginMessage();
+
+// console.log(result)
