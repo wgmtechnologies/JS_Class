@@ -1,0 +1,137 @@
+
+// 1. Example ======================================>
+
+// function myName() {
+//     console.log("U")
+//     console.log("M")
+//     console.log("E")
+//     console.log("S")
+//     console.log("H")
+// }
+
+// myName()
+
+
+
+// 2. Example ======================================>
+
+// function addTwoNumber(num1, num2) {
+//     console.log(num1+num2)
+// }
+// addTwoNumber(2,6)
+
+
+
+// 3. Example ======================================>
+
+// function addTwoNumber(num1, num2) {
+//     console.log(num1+num2)
+// }
+
+// const result = addTwoNumber(10, 20)
+// console.log(result); // undefined .
+
+
+
+// 4. Example ======================================>
+
+// function addTwoNumber(num1, num2) {
+//     // console.log(num1+num2)
+//     let result = num1 + num2;
+//     return result
+// }
+
+// addTwoNumber(2,4)
+
+// const output = addTwoNumber(2,3)
+// console.log("result: ", output); 
+
+
+// 5. Example ======================================>
+
+// function userloginMessage(userName) {
+//     return `${userName} Just login`;
+// }
+// console.log(userloginMessage("Umesh"))
+// const newUser = userloginMessage("Suman");
+// console.log(newUser)
+
+
+
+// 6. Example ======================================>
+
+// function userLoginMessage(userName) {
+//     if (userName === undefined) {
+//         console.log("Please Enter UserName")
+//     }   
+//     return `${userName} Just logged in`;
+// }
+// console.log(userLoginMessage())
+
+
+
+// function userLoginMessage(userName) {
+//     if (!userName) {
+//         console.log("Enter UserName")
+//     }
+//     return`${userName} Just logged in`;
+// }
+
+// console.log(userLoginMessage("sd"))
+
+
+// function userLoginMessage(userName = "Guest") {
+//     if (!userName) {
+//         console.log("Enter UserName")
+//     }
+//     return`${userName} Just logged in`;
+// }
+
+// console.log(userLoginMessage("Umesh"))
+
+
+
+// 7. Example (... rest Operator, ... spred operator) ======================================>
+
+// function cardPrice(...num1) {
+//     return num1
+// }
+// console.log(cardPrice(200, 300, 500));
+
+
+
+// function cardPrice(val1, val2, ...num1) {
+//     return num1
+//     }
+// console.log(cardPrice(1000,2000,3000,4000))
+
+
+
+
+// 8. Example ======================================>
+
+// const productList ={
+//     productName:"Apple",
+//     price:999
+//     // prices:999
+// }
+
+// function productCardDesign(anyProduct) {
+//     console.log(`Product is ${anyProduct.productName} and Price is ${anyProduct.price}`)
+// }
+// productCardDesign(productList)
+
+// productCardDesign({
+//     productName:"AAAAA",
+//     price:9090
+// })
+
+
+// 9. Example ======================================>
+
+// const productPriceList = [100,200,300,400,500];
+
+// function productPrice(myNewArray) {
+//     return myNewArray[2];
+// }
+// console.log(productPrice(productPriceList))
