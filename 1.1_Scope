@@ -1,0 +1,78 @@
+
+// let num1 = 100
+// const num2 = 300
+// var num3 = 400
+
+
+// if (true) {
+
+// 	// let num1 = 1000
+// 	// const num2 = 300
+// 	var num3 = 500
+
+// 	// console.log("Inner scope value: ", num1)
+// }
+
+
+
+// // console.log(num1)
+// // console.log(num2)
+// console.log(num3)
+
+
+
+// function one(num) {
+// 	const username = num
+// 	return username
+// }
+
+
+
+
+// function one() {
+//     const username = "Umesh"
+
+//     function two() {
+//         const website ="www.plus-is.com"
+//         console.log(username)
+//     }
+    
+//     // console.log(website)
+//     two()
+// }
+// one()
+
+
+
+// if (true) {
+// 	const username = "aman"
+// 	if (username === "aman") {
+
+// 		const emial = " aman@plus-is.com"
+
+// 		console.log(username + emial)
+
+// 	}
+// 	console.log(emial)
+// }
+
+
+
+console.log(firstValue())
+
+function firstValue() {
+	const num = 1000;
+	return num
+}
+
+// console.log(firstValue())
+
+
+console.log(secondValue(11))
+
+const secondValue = function(num) {
+	
+	return num + 1
+
+}
+
