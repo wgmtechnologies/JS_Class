@@ -1,0 +1,98 @@
+// this key 
+
+
+// const user = {
+// 	username:"Umesh",
+// 	email:"umesh@gmail.com",
+// 	welcomeMessage:function () {
+// 		// console.log(`Hi! ${this.username} Welcome to my website`)
+// 		alert(`Hi! ${this.username} Welcome to my website`)
+// 		console.log(this)
+// 	}
+// }
+
+// user.welcomeMessage()
+// user.username = "prince"
+// // user.username = "suman"
+// user.welcomeMessage()
+
+// console.log(this)
+// {} return node.js
+
+
+
+// function webtech()
+// {
+// 	console.log(this)
+// }
+// webtech()
+
+
+
+// function webtech() {
+// 	const username = "prince"
+// 	console.log(this.username)
+// }
+// webtech()
+
+
+
+
+// const webtech = function () {
+// 	const username= "umesh"
+// 	console.log(this.username)
+// }
+// webtech()
+
+
+// const webtech = () => {
+// 	const username = "umesh"
+// 	console.log(this.username)
+// }
+// webtech()
+
+
+// const webtech = () =>
+// {
+// 	const username = "Umesh"
+// 	console.log(this.username)
+// }
+// webtech()
+
+
+// const addnumber = (num1, num2) =>
+// {
+// 	console.log(num1 + num2)
+// 	return num1 + num2
+// }
+
+// console.log(addnumber(2,10))
+// addnumber(2,4)
+
+
+// const addnumber = (num1, num2) => num1 + num2
+// const addnumber = (num1, num2) => (num1 + num2)
+// const addnumber = (num1, num2) => ({username:"umesh"})
+
+// console.log(addnumber(2,10))
+
+
+
+
+
+// Emplicit Return
+
+// const addNumber = (num1, num2) => num1 + num2
+
+// const addNumber = (num1, num2) => (num1 + num2)
+
+// const addNumber = (num1, num2) => ({username: "Umesh"})
+
+// console.log(addNumber(2,4))
+
+
+
+
+
+
+
